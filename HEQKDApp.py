@@ -351,7 +351,6 @@ class HEQKDApp(App) :
 		Clock.schedule_interval(self.heqkd.update, 0.5)
 		return self.heqkd
 
-
 if __name__ == '__main__' :
 	heqkd = HEQKDApp()
 	heqkd.run()

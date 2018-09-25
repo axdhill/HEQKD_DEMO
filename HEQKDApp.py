@@ -339,9 +339,7 @@ class HEQKD(FloatLayout) :
 		
 
 
-
 class HEQKDApp(App) :
-
 	def build(self) :
 		# fname = "data_input.txt"
 		# poll_thread = Thread(group = None, target=poll_file, args=(fname,))
@@ -354,11 +352,8 @@ class HEQKDApp(App) :
 		return self.heqkd
 
 
-
-
 if __name__ == '__main__' :
-	heqkd_alice = HEQKDApp()
-
-	heqkd_alice.run()
+	heqkd = HEQKDApp()
+	heqkd.run()
 
 

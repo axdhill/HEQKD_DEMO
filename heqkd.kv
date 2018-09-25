@@ -1,0 +1,38 @@
+#:kivy 1.0.9
+
+<HEQKD>:
+
+	Label:
+		id: title
+		text: "HE-QKD Demo"
+		font_size: 20
+		pos_hint: {'x':-0.4, 'y':0.45}
+
+	Label:
+		id: party_name
+		text: root.name
+		font_size: 40
+		pos_hint: {'x':0, 'y':0.45}
+
+	Label:
+		id: singles_data
+		pos_hint: {'x':-0.2, 'y':-0.1}
+		text: "Singles Rate: " + str(root.singles_rate)
+		font_size: 40
+	Label:
+		id: coin_data
+		pos_hint: {'x':-0.2, 'y':0}
+		text: "Coin Rate: "+ str(root.coin_rate)
+		font_size: 40
+	Label:
+		id: crosstalk_label
+		pos_hint: {'x':0.2, 'y':0}
+		text: "Crosstalk"
+		font_size:40
+	Label:
+		id: qber_label
+		pos_hint: {'x':0.2, 'y':-0.2}
+		text: "QBER {0:.2f}".format(100*root.qber) 
+		font_size:40
+	
+
